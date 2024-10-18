@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", system-ui;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 0px;
+    background-color: black;
+    width: 100%;
+    padding: 17px 30px;
+    z-index: 2;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.our-project {
+    font-size: 24px;
+    color: white;
+
+}
+
+.navbar img {
+    margin-right: 8px;
+    border-radius: 15px;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list a {
+    font-size: 13px;
+    margin: 8px 11px;
+    color: white;
+    padding: 8px 12px;
+}
+
+.nav-list a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.left-nav {
+    margin-right: 30px;
+}
+
+.right-nav {
+    margin-right: 30px;
+    display: flex;
+}
+
+.right-nav a {
+    font-size: 13px;
+    color: white;
+}
+
+.right-nav li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.right-nav a:hover {
+    color: skyblue;
+}
+.navbar .right-nav{
+    position: absolute;
+    right: 40px;
+}
+
+.bar {
+    color: white;
+}
+
+@media (min-width: 1000px) {
+    .bar {
+        position: absolute;
+        right: -100px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .nav-list {
+        display: none;
+    }
+}
+
+.homepage_cover {
+    background-size: cover;
+    position: absolute;
+    top: 54px;
+    width: 100%;
+    min-height: 300px;
+    padding-bottom: 56%;
+}
+.homepage_cover_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.homepage_cover_wrap {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    color: #ffff;
+    width: 100%;
+    padding-left: 160px;
+    z-index: 3;
+}
+
+.line2 {
+    font-size: 50px;
+}
+
+.join-btn {
+    color: white;
+    font-size: 30px;
+    padding: 8px 16px;
+    border-radius: 18px;
+    background-color: rgb(59, 125, 183);
+    margin-top: 10px;
+    border: none;
+}

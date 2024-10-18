@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    /* display: flex; */
+    /* justify-content: center; */
+    margin-bottom: 30px;
+}
+
+.main{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    max-height: 550px;
+    max-width: 400px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    /* height: 40px; */
+    /* width: 200px; */
+    padding: 15px;
+}
+
+#name, #father, #email, #date, #password{
+    width: 350px;
+    text-align: center;
+    font-size: 18px;
+}
+
+label{
+font-size: 20px;
+font-weight: 600;
+}
+
+.inputs-radio{
+    width: 50px;
+    margin-left: 0px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button{
+    padding: 15px;
+    width: 350px;
+    background: rgb(47, 47, 151);
+    color: white;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+}
+
+.btn button:hover{
+    background: blue;
+}

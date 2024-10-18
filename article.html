@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Article Page</title>
+    <link rel="stylesheet" href="article.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+        <img src="leading line.jpg" alt="leading line example Image" class="interactive-image">
+        <h1>The Art of Compositions</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <article class="article-content">
+                <p>The art of composition refers to the deliberate arrangement of visual elements within a frame to create a compelling image. A well-composed photograph can guide the viewer's eye, convey emotion, and tell a story.</p>
+
+            <div class="highlight-box">
+                <p>Effective composition elevates photos by directing focus and evoking emotion through various techniques.</p>
+            </div>
+
+            <button id="readMoreBtn" class="read-more-btn">Read More</button>
+
+            <div id="hiddenContent1" class="hidden-content">
+                <p>Key techniques include the rule of thirds, where the frame is divided into nine equal parts and important elements are placed along these lines or intersections. Leading lines can draw attention to the subject, while framing techniques, like shooting through a window or arch, add depth. Balancing elements ensures that no part of the image overwhelms another, creating harmony. By mastering composition, photographers can elevate ordinary scenes into captivating works of art.</p>
+                <p>Some easy and great composition techniques for beginners are-</p>
+                <ul>
+                    <li>Rule of Thirds</li>
+                    <li>Leading Lines</li>
+                    <li>Symmetry and Balance</li>
+                    <li>Framing</li>
+                    <li>Golden Ratio</li>
+                    <li>Triangles and Diagonals</li>
+                </ul>
+
+                <button id="readLessBtn" class="read-less-btn">Read Less</button>
+
+            </div>
+        </article>
+    </main>
+
+    <script>
+        document.getElementById('readMoreBtn').addEventListener('click', function() {
+            var hiddenContent1 = document.getElementById('hiddenContent1');
+            var readMoreBtn = this;
+            
+            if (hiddenContent1.style.display === 'none' || hiddenContent1.style.display === '') {
+                hiddenContent1.style.display = 'block';
+                readMoreBtn.textContent = 'Read Less';
+            } else {
+                hiddenContent1.style.display = 'none';
+                readMoreBtn.textContent = 'Read More';
+            }
+        });
+    </script>
+</body>
+</html>
