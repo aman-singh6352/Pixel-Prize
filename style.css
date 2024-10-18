@@ -9,6 +9,13 @@ body {
     font-weight: 700;
 }
 
+.content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
 .navbar {
     display: flex;
     position: fixed;
@@ -17,7 +24,7 @@ body {
     background-color: black;
     width: 100%;
     padding: 17px 30px;
-    z-index: 2;
+    z-index: 999;
 }
 
 .navbar a {
@@ -95,12 +102,11 @@ body {
 }
 
 .homepage_cover {
+    position: relative;
     background-size: cover;
-    position: absolute;
-    top: 54px;
-    width: 100%;
-    min-height: 300px;
+    height: calc(100vh - 74px);
     padding-bottom: 56%;
+    overflow: hidden;
 }
 
 .homepage_cover_video {
@@ -113,22 +119,31 @@ body {
 
 .homepage_cover_wrap {
     position: absolute;
-    top: 35%;
+    top: 37%;
     left: 0;
-    color: black;
+    color: rgb(255, 255, 255);
     width: 100%;
     padding-left: 140px;
     z-index: 3;
 }
 
+.line1 {
+    font-size: 32px;
+}
+
 .line2 {
-    font-size: 90px;
-    line-height: 0.9;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.line3 {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .join-btn {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     padding: 8px 30px;
     border-radius: 18px;
     background-color: rgb(59, 125, 183);
@@ -136,3 +151,45 @@ body {
     border: none;
 }
 
+.join-btn:hover {
+    background-color: white;
+    color: blue;
+}
+
+.motivation {
+    padding: 25px 0px;
+    text-align: center;
+    background-color: #ffff;
+}
+
+.motivation_title {
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: black;
+    font-size: 38px;
+    font-weight: 650;
+}
+
+.motivation .motivation_title span {
+    color: #008ddc;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.motivation .motivation_text {
+    margin: 20px auto;
+    text-align: center;
+    letter-spacing: 0;
+    color: #666;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.motivation .motivation_text span {
+    display: block;
+}
+
+.motivation img{
+    margin-top: 10px;
+}
