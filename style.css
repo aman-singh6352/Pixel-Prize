@@ -114,22 +114,24 @@ body {
     position: absolute;
     top: 35%;
     left: 0;
-    color: #ffff;
+    color: black;
     width: 100%;
-    padding-left: 160px;
+    padding-left: 140px;
     z-index: 3;
 }
 
 .line2 {
-    font-size: 50px;
+    font-size: 60px;
+    line-height: 100px ;
 }
 
 .join-btn {
     color: white;
     font-size: 30px;
-    padding: 8px 16px;
+    padding: 8px 30px;
     border-radius: 18px;
     background-color: rgb(59, 125, 183);
     margin-top: 10px;
     border: none;
 }
+
