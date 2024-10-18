@@ -102,6 +102,7 @@ body {
     min-height: 300px;
     padding-bottom: 56%;
 }
+
 .homepage_cover_video {
     position: absolute;
     top: 0;
@@ -121,8 +122,8 @@ body {
 }
 
 .line2 {
-    font-size: 60px;
-    line-height: 100px ;
+    font-size: 90px;
+    line-height: 0.9;
 }
 
 .join-btn {
