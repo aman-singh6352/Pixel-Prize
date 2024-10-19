@@ -48,12 +48,18 @@
             var hiddenContent1 = document.getElementById('hiddenContent1');
             var readMoreBtn = this;
             
-            if (hiddenContent1.style.display === 'none' || hiddenContent1.style.display === '') {
+            if (hiddenContent1.style.display === 'none') {
                 hiddenContent1.style.display = 'block';
-                readMoreBtn.textContent = 'Read Less';
+                readMoreBtn.style.display = 'none';
             } else {
                 hiddenContent1.style.display = 'none';
                 readMoreBtn.textContent = 'Read More';
+            }
+        });
+        document.getElementById('readLessBtn').addEventListener('click', function() {
+            if (hiddenContent1.style.display === 'block') {
+                hiddenContent1.style.display = 'none';
+                readMoreBtn.style.display = 'block';
             }
         });
     </script>
