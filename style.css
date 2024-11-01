@@ -177,7 +177,7 @@ body {
 }
 
 .motivation .motivation_text {
-    margin: 20px auto;
+    margin: 0px auto;
     text-align: center;
     letter-spacing: 0;
     color: #666;
@@ -190,6 +190,8 @@ body {
     display: block;
 }
 
-.motivation img{
-    margin-top: 10px;
+.motivation .motivation_page_images{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
 }
