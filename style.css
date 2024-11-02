@@ -34,7 +34,6 @@ body {
 .our-project {
     font-size: 24px;
     color: white;
-
 }
 
 .navbar img {
@@ -77,8 +76,9 @@ body {
 }
 
 .right-nav a:hover {
-    color: skyblue;
+    color: blue;
 }
+
 .navbar .right-nav{
     position: absolute;
     right: 40px;

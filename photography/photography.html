@@ -10,18 +10,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>Photography Challenges</title>
 </head>
-<body>
+<body> 
     <header>
         <nav class="navbar">
-            <img src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FsbGVyeXxlbnwwfHwwfHx8MA%3D%3D" alt="logo" style="width: 28px;height:  28px">
+            <img src="../Screenshot 2024-10-12 124539.png" alt="logo" style="width: 30px; height: 30px;">
             <div class="left-nav">
-                <a href="../index.html" class="our-project">OurProject</a>
+                <a href="../index.html" class="our-project">Pixel Prize</a>
             </div>
             <ul class="nav-list">
                 <li><a href="../index.html">HOME</a></li>
                 <li><a href="#discover">DISCOVER</a></li>
-                <li><a href="#articles">ARTICLES</a></li>
-                <li><a href="#carrers">CARRERS</a></li>
+                <li><a href="../article.html">ARTICLES</a></li>
+                <li><a href="#carrers">CONTACT US</a></li>
             </ul>
             <div class="right-nav">
                 <li><a href="#login">SIGN IN</a></li>
@@ -29,5 +29,28 @@
             </div>
         </nav>
     </header>
+
+    <main class="main-content">
+        <div class="filters-section">
+            <button class="filter-btn active" data-filter="all">All Challenges</button>
+            <button class="filter-btn" data-filter="new">New</button>
+            <button class="filter-btn" data-filter="trending">Trending</button>
+        </div>
+
+        <div class="challenges-grid">
+            <!-- Challenge cards will be populated by JavaScript -->
+        </div>
+    </main>
+
+    <div class="challenge-popup">
+        <div class="popup-content">
+            <button class="close-btn">&times;</button>
+            <h2 class="popup-title"></h2>
+            <p class="popup-end-date"></p>
+            <p class="popup-description"></p>
+        </div>
+    </div>
+    <script src="javascriptphoto.js"></script>
+    
 </body>
 </html>
