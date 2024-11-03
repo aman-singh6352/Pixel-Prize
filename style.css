@@ -195,3 +195,35 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
+
+.home-page__insights{
+    max-height: 530px;
+    padding-bottom: 45%;
+    background-image: url("EXPERIMENT.png");
+    position: realtive;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-page__insights .text {
+    position: relative;
+    top: 25px;
+    left: 0;
+    width: 100%;
+}
+
+.home-page__insights .title {
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #ffff;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.home-page__insights .sub-title {
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #ffff;
+    font-size: 26px;
+    line-height: 1.69;
+}
