@@ -2,52 +2,52 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    max-width: 800px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
     background-color: #f4f4f4;
 }
 
-header {
-    background-color: #333333;
-    color: white;
-    text-align: center;
-    margin-bottom: 2em;
-    border-radius: 5px;
+.articles-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.article-block {
+    background-color: #fff;
+    margin-bottom: 40px;
+    border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     overflow: hidden;
 }
 
 .header-content {
     position: relative;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    overflow: hidden;
 }
 
 h1 {
-    margin: 0;
     position: absolute;
     font-size: 50px;
-    width: 660px;
-    height: 62px;
+    width: 680px;
+    height: 80px;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    backdrop-filter: blur;
+    backdrop-filter: blur(2px);
     padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
-.article-meta {
-    flex-grow: 1;
-}
-
-.article-content {
-    background-color: #F8F8F8;
-    padding: 1em;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+[role="main"] {
+    padding: 20px;
 }
 
 .highlight-box {
-    background-color: #D4aF37;
+    background-color: #D4AF37;
     color: #333;
     padding: 1em;
     margin: 1em 0;
@@ -61,8 +61,12 @@ h1 {
 
 .interactive-image {
     height: 525px;
-    width:700px;
-    border-radius: 5px;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
     transition: filter 0.5s ease;
     cursor: pointer;
 }
@@ -71,19 +75,7 @@ h1 {
     filter: brightness(1.2);
 }
 
-.read-more-btn {
-    display: inline-block;
-    background-color: #6A7FDB;
-    color: white;
-    text-decoration: none;
-    padding: 0.5em 1em;
-    border-radius: 3px;
-    margin: 1em 0;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-    border: none;
-}
-
+.read-more-btn,
 .read-less-btn {
     display: inline-block;
     background-color: #6A7FDB;
@@ -97,8 +89,30 @@ h1 {
     border: none;
 }
 
+.read-more-btn:hover,
+.read-less-btn:hover {
+    background-color: #5466b3;
+}
+
 .hidden-content {
     display: none;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
+}
+
+/* Added responsive design */
+@media (max-width: 850px) {
+    .articles-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 36px;
+        width: 90%;
+        height: auto;
+    }
+
+    .interactive-image {
+        height: 300px;
+    }
 }
