@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discover Gallery</title>
+    <link rel="stylesheet" href="discover.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <!-- Hero Image with Overlay Text -->
+        <div class="hero-section" data-photographer="Ananya Chauhan" data-location="Delhi,India">
+            <div class="hero-image">
+                <img src="redfort.jpg" alt="Hero image">
+            </div>
+            <div class="hero-overlay">
+                <h1>Discover Amazing Photos</h1>
+            </div>
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div class="gallery">
+            <div class="gallery-item" data-photographer="Aditya Narayana" data-location="Ghaziabad, India">
+                <img src="night road.jpg" alt="Gallery image 1">
+            </div>
+            <div class="gallery-item" data-photographer="Ananya chauhan" data-location="Muzzafarnagar, India">
+                <img src="old man.jpg" alt="Gallery image 2">
+            </div>
+            <div class="gallery-item" data-photographer="Aditya Narayana" data-location="Mirzapur, India">
+                <img src="station.jpg" alt="Gallery image 3">
+            </div>
+            <div class="gallery-item" data-photographer="Ananya Chauhan" data-location="Sydney, Australia">
+                <img src="sea-view.jpg" alt="Gallery image 4">
+            </div>
+            <div class="gallery-item" data-photographer="Aditya Narayana" data-location="Ghaziabad, India">
+                <img src="product.jpg" alt="Gallery image 5">
+            </div>
+            <div class="gallery-item" data-photographer="Ananya Chauhan" data-location="Delhi, India">
+                <img src="auto.jpg" alt="Gallery image 6">
+            </div>
+            <div class="gallery-item" data-photographer="Aditya Narayana" data-location="Delhi, India">
+                <img src="heritage.jpg" alt="Gallery image 7">
+            </div>
+            <div class="gallery-item" data-photographer="Ananya Chauhan" data-location="Muzzafarnagar, India">
+                <img src="diwali.jpg" alt="Gallery image 8">
+            </div>
+            <div class="gallery-item" data-photographer="Aditya Narayana" data-location="Nalanda, India">
+                <img src="oldtemple.jpg" alt="Gallery image 9">
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Photo Details</h2>
+            <p>Photographer: <span id="photographer"></span></p>
+            <p>Location: <span id="location"></span></p>
+        </div>
+    </div>
+
+    <script src="discover.js"></script>
+</body>
+</html>
