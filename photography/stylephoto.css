@@ -8,22 +8,21 @@ body {
     font-family: "Nunito", system-ui;
     font-weight: 700;
     background-color: #f5f5f5;
+    scroll-behavior: smooth;
 }
 
 .content {
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
 }
 
 .navbar {
     display: flex;
     position: fixed;
+    top: 0;
     align-items: center;
     background-color: black;
     width: 100%;
-    padding: 17px 30px;
+    padding: 17px 10px 17px 80px;
     z-index: 999;
 }
 
@@ -53,6 +52,7 @@ body {
 }
 
 .nav-list a:hover {
+    border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -96,11 +96,12 @@ body {
 
 .main-content {
     max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 2rem;
+    margin: 0 auto;
+    padding: 67px 2rem;
 }
 
 .filters-section {
+    padding-top: 68px;
     margin-bottom: 2rem;
     display: flex;
     gap: 1rem;
@@ -129,10 +130,6 @@ body {
 .challenges-grid {
     display: flex;
     flex-wrap: wrap;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
-    flex-wrap: wrap; */
 }
 
 .challenge-card {
