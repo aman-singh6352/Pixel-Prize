@@ -7,6 +7,7 @@
 body {
     font-family: "Nunito", system-ui;
     font-weight: 700;
+    scroll-behavior: smooth;
 }
 
 .content {
@@ -23,7 +24,7 @@ body {
     top: 0px;
     background-color: black;
     width: 100%;
-    padding: 17px 30px;
+    padding: 17px 10px 17px 80px;
     z-index: 999;
 }
 
@@ -53,6 +54,7 @@ body {
 }
 
 .nav-list a:hover {
+    border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -153,10 +155,10 @@ body {
 
 .join-btn:hover {
     background-color: white;
-    color: blue;
+    color: rgba(0, 0, 255, 0.683);
 }
 
-.motivation {
+.motivation_page {
     padding: 25px 0px;
     text-align: center;
     background-color: #ffff;
@@ -170,13 +172,13 @@ body {
     font-weight: 650;
 }
 
-.motivation .motivation_title span {
+.motivation_page .motivation_title span {
     color: #008ddc;
     font-size: 46px;
     font-weight: bold;
 }
 
-.motivation .motivation_text {
+.motivation_page .motivation_text {
     margin: 0px auto;
     text-align: center;
     letter-spacing: 0;
@@ -186,11 +188,11 @@ body {
     line-height: 1.6;
 }
 
-.motivation .motivation_text span {
+.motivation_page .motivation_text span {
     display: block;
 }
 
-.motivation .motivation_page_images{
+.motivation_page .motivation_page_images{
     margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
