@@ -9,11 +9,109 @@ body {
     padding: 20px;
     font-family: Arial, sans-serif;
     min-width: 1200px;
+    scroll-behavior: smooth;
+}
+
+.content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    font-weight: 700;
+    top: 0px;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    margin-bottom: 70px;
+    padding: 17px 10px 17px 80px;
+    z-index: 999;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.our-project {
+    font-size: 24px;
+    color: white;
+}
+
+.navbar img {
+    margin-right: 8px;
+    border-radius: 15px;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list a {
+    font-size: 13px;
+    margin: 8px 11px;
+    color: white;
+    padding: 8px 12px;
+}
+
+.nav-list a:hover {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.left-nav {
+    margin-right: 30px;
+}
+
+.right-nav {
+    margin-right: 30px;
+    display: flex;
+}
+
+.right-nav a {
+    font-size: 13px;
+    color: white;
+}
+
+.right-nav li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.right-nav a:hover {
+    color: blue;
+}
+
+.navbar .right-nav{
+    position: absolute;
+    right: 40px;
+}
+
+.bar {
+    color: white;
+}
+
+@media (min-width: 1000px) {
+    .bar {
+        position: absolute;
+        right: -100px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .nav-list {
+        display: none;
+    }
 }
 
 .gallery-container {
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 65px;
 }
 
 /* Hero Section Styles */
