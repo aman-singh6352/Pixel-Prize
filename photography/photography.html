@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Screenshot 2024-10-12 124539.png" style="width: 30px; height: 30px; border-radius: 100px;">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="stylephoto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,47 +13,46 @@
 </head>
 <body> 
     <div class="content">
-    <header>
-        <nav class="navbar">
-            <img src="../Screenshot 2024-10-12 124539.png" alt="logo" style="width: 30px; height: 30px;">
-            <div class="left-nav">
-                <a href="../index.html" class="our-project">Pixel Prize</a>
+        <header>
+            <nav class="navbar">
+                <img src="../Screenshot 2024-10-12 124539.png" alt="logo" style="width: 30px; height: 30px;">
+                <div class="left-nav">
+                    <a href="../index.html" class="our-project">Pixel Prize</a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../discover/discover.html">DISCOVER</a></li>
+                    <li><a href="../article.html">ARTICLES</a></li>
+                    <li><a href="../contact.html">CONTACT US</a></li>
+                </ul>
+                <div class="right-nav">
+                    <li><a href="../login.html">SIGN IN</a></li>
+                    <li><a href="../signup.html">SIGN UP</a></li>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <div class="filters-section">
+                <button class="filter-btn active" data-filter="all">All Challenges</button>
+                <button class="filter-btn" data-filter="new">New</button>
+                <button class="filter-btn" data-filter="trending">Trending</button>
             </div>
-            <ul class="nav-list">
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="#discover">DISCOVER</a></li>
-                <li><a href="../article.html">ARTICLES</a></li>
-                <li><a href="#carrers">CONTACT US</a></li>
-            </ul>
-            <div class="right-nav">
-                <li><a href="#login">SIGN IN</a></li>
-                <li><a href="#signup">SIGN UP</a></li>
+
+            <div class="challenges-grid">
+                <!-- Challenge cards will be populated by JavaScript -->
             </div>
-        </nav>
-    </header>
+        </main>
 
-    <main class="main-content">
-        <div class="filters-section">
-            <button class="filter-btn active" data-filter="all">All Challenges</button>
-            <button class="filter-btn" data-filter="new">New</button>
-            <button class="filter-btn" data-filter="trending">Trending</button>
-        </div>
-
-        <div class="challenges-grid">
-            <!-- Challenge cards will be populated by JavaScript -->
-        </div>
-    </main>
-
-    <div class="challenge-popup">
-        <div class="popup-content">
-            <button class="close-btn">&times;</button>
-            <h2 class="popup-title"></h2>
-            <p class="popup-end-date"></p>
-            <p class="popup-description"></p>
+        <div class="challenge-popup">
+            <div class="popup-content">
+                <button class="close-btn">&times;</button>
+                <h2 class="popup-title"></h2>
+                <p class="popup-end-date"></p>
+                <p class="popup-description"></p>
+            </div>
         </div>
     </div>
-</div>
     <script src="javascriptphoto.js"></script>
-    
 </body>
 </html>

@@ -5,18 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Article Page</title>
     <link rel="stylesheet" href="article.css">
+    <link rel="icon" href="Screenshot 2024-10-12 124539.png" style="width: 30px; height: 30px; border-radius: 100px;">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
+    <h1>
+        
+    </h1>
     <header>
-        <div class="header-content">
-        <img src="leading line.jpg" alt="leading line example Image" class="interactive-image">
-        <h1>The Art of Compositions</h1>
-        </div>
+        <nav class="navbar">
+            <img src="../Screenshot 2024-10-12 124539.png" alt="logo" style="width: 30px; height: 30px;">
+            <div class="left-nav">
+                <a href="../index.html" class="our-project">Pixel Prize</a>
+            </div>
+            <ul class="nav-list">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../photography/photography.html">PHOTOGRAPHY</a></li>
+                <li><a href="../discover/discover.html">DISCOVER</a></li>
+                <li><a href="../contact.html">CONTACT US</a></li>
+            </ul>
+            <div class="right-nav">
+                <li><a href="../login.html">SIGN IN</a></li>
+                <li><a href="../signup.html">SIGN UP</a></li>
+            </div>
+        </nav>
     </header>
-
-    <main>
-
+    <main class="first">
         <article class="article-content">
+            <header class="header">
+                <div class="header-content">
+                <img src="leading line.jpg" alt="leading line example Image" class="interactive-image">
+                <h1>The Art of Compositions</h1>
+                </div>
+            </header>
                 <p>The art of composition refers to the deliberate arrangement of visual elements within a frame to create a compelling image. A well-composed photograph can guide the viewer's eye, convey emotion, and tell a story.</p>
 
             <div class="highlight-box">
@@ -41,8 +65,10 @@
 
             </div>
         </article>
-    </main>
 
+
+    </main>
+    
     <script>
         document.getElementById('readMoreBtn').addEventListener('click', function() {
             var hiddenContent1 = document.getElementById('hiddenContent1');
@@ -62,6 +88,6 @@
                 readMoreBtn.style.display = 'block';
             }
         });
-    </script>
+    </script> 
 </body>
 </html>
