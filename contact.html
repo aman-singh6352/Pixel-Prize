@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -237,3 +238,244 @@
     </div>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Screenshot 2024-10-12 124539.png" style="width: 30px; height: 30px; border-radius: 100px;">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Contact | Pixel Prize</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', system-ui;
+            font-weight: 700;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            display: flex;
+            position: fixed;
+            align-items: center;
+            top: 0px;
+            left: 0;
+            background-color: black;
+            width: 100%;
+            padding: 17px 10px 17px 80px;
+            z-index: 999;
+        }
+
+        .navbar a {
+            text-decoration: none;
+        }
+
+        .our-project {
+            font-size: 24px;
+            color: white;
+        }
+
+        .navbar img {
+            margin-right: 8px;
+            border-radius: 15px;
+        }
+        .nav-list {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-list a {
+            font-size: 13px;
+            margin: 8px 11px;
+            color: white;
+            padding: 8px 12px;
+        }
+
+        .nav-list a:hover {
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .left-nav {
+            margin-right: 30px;
+        }
+
+        .right-nav {
+            margin-right: 30px;
+            display: flex;
+        }
+
+        .right-nav a {
+            font-size: 13px;
+            color: white;
+        }
+
+        .right-nav li{
+            list-style: none;
+            margin-right: 30px;
+        }
+
+        .right-nav a:hover {
+            color: blue;
+        }
+
+        .navbar .right-nav{
+            position: absolute;
+            right: 40px;
+        }
+
+        .bar {
+            color: white;
+        }
+
+        @media (min-width: 1000px) {
+            .bar {
+                position: absolute;
+                right: -100px;
+            }
+        }
+
+        @media (max-width: 1100px) {
+            .nav-list {
+                display: none;
+            }
+        }
+
+        .contact_page_wrap {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .contact_page_text, .contact_page_form {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        p {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        .contact_page_form_input {
+            margin-bottom: 15px;
+        }
+
+        .contact_page_form_input input,
+        .contact_page_form_input textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+        }
+
+        .contact_page_form_input input:focus,
+        .contact_page_form_input textarea:focus {
+            border: 2px solid blue;
+            outline: none;
+        }
+
+        .contact_page_form_input textarea {
+            height: 160px;
+            resize: vertical;
+        }
+
+        button.btn-blue {
+            background-color: #3498db;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button.btn-blue:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="../Screenshot 2024-10-12 124539.png" alt="logo" style="width: 30px; height: 30px;">
+            <div class="left-nav">
+                <a href="../index.html" class="our-project">Pixel Prize</a>
+            </div>
+            <ul class="nav-list">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../photography/photography.html">PHOTOGRAPHY</a></li>
+                <li><a href="discover.html">DISCOVER</a></li>
+                <li><a href="../article.html">ARTICLES</a></li>
+            </ul>
+            <div class="right-nav">
+                <li><a href="../login.html">SIGN IN</a></li>
+                <li><a href="../signup.html">SIGN UP</a></li>
+            </div>
+        </nav>
+    </header>
+    <div class="contact">
+        <div class="contact_page_wrap">
+            <div class="contact_page_text">
+                <h1>We'd love to hear from you!</h1>
+                <hr>
+                <p>
+                    Feel free to contact us with any comments, questions, or suggestions you might have. We created this site for photography fans, and we'd love to know if you have any great ideas on how to make it even better for you. Thanks.
+                </p>
+                <p>Cheers,</p>
+                <p>The Pixel Prize team</p>
+            </div>
+            <div class="contact_page_form">
+                <form action="/action" name="contact_form">
+                                <!-- Input -->
+                    <div class="contact_page_form_input">
+                        <input type="text" placeholder="Name" name="name" required>
+                    </div>
+                                <!-- Email -->
+                    <div class="contact_page_form_input">
+                        <input type="email" placeholder="Email" name="email" required>
+                    </div>
+                                <!-- Subject -->
+                    <div class="contact_page_form_input">
+                        <input type="text" placeholder="Subject" name="subject" required>
+                    </div>
+                                <!-- Message -->
+                    <div class="contact_page_form_input">
+                        <textarea placeholder="Message" name="message" required></textarea>
+                    </div>
+                    <button class="btn-blue" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+>>>>>>> 618878b53ee278171a8fdb5b91d675cec4b25ff0
