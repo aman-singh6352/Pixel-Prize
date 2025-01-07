@@ -267,6 +267,37 @@ body {
     transform: translateY(-5px);
 }
 
+.image-container {
+    position: relative;
+}
+
+.download-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.challenge-card:hover .download-btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+.download-btn:hover {
+    transform: scale(0.9);
+}
+
+.download-btn i {
+    font-size: 18px;
+}
+
 .challenge-image {
     width: 100%;
     height: 200px;
@@ -325,6 +356,8 @@ body {
 .challenge-popup.visible {
     display: flex;
 }
+
+
 
 @media (max-width: 768px) {
     .challenges-grid {

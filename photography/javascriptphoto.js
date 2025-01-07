@@ -62,6 +62,9 @@ function createChallengeCard(challenge) {
     card.className = 'challenge-card';
     card.innerHTML = `
         <img src="${challenge.image}" alt="${challenge.title}" class="challenge-image">
+        <button class="download-btn" onclick="downloadImage('${challenge.image}')">
+            <i class="fa-regular fa-circle-down" style="color: #ffffff;"></i>
+        </button>
         <div class="challenge-info">
             <h3 class="challenge-title">${challenge.title}</h3>
             <div class="challenge-details">
@@ -72,6 +75,16 @@ function createChallengeCard(challenge) {
     
     card.addEventListener('click', () => showPopup(challenge));
     return card;
+}
+
+// Download image function
+function downloadImage(imageUrl) {
+    const a = document.createElement('a');
+    a.href = imageUrl;
+    a.download = imageUrl.split('/').pop();
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
 }
 
 // Filter challenges
