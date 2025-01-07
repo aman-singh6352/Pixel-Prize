@@ -7,25 +7,61 @@
     <link rel="stylesheet" href="styleup.css">
 </head>
 <body>
-    <div class="main">
-        <h1>Sign up Form</h1>
-        <div class="sign">
-        <input type="text" placeholder="Enter Your Name" id="name" required > <br> <br>
-        <input type="email" placeholder="Enter Your Email" id="email"  required> <br> <br>
-        <input type="date" id="date" required> <br> <br>
-        <label for=""> Gender </label> 
-            <input type="radio" name="gender" class="inputs-radio" id="radio"  required>Male 
-            
-            <input type="radio" name="gender" class="inputs-radio"  required> Female
-             <br><br>
-
-        <input type="password" placeholder="Enter your password" required id="password"> <br><br>
-      <div class="btn">      
-        <button id="buton">Sign in</button>
-    </div>
+    <form action="" name="SignUpForm">
+        <div class="main">
+            <h1>Sign up Form</h1>
+            <div class="sign">
+                <input type="text" placeholder="Enter Your Name" id="name" required > <br> <br>
+                <input type="email" placeholder="Enter Your Email" id="email"  required> <br> <br>
+                <input type="date" id="date" required> <br> <br>
+                <label for=""> Gender </label> 
+                <input type="radio" name="gender" class="inputs-radio" id="radio"  required>Male 
+                
+                <input type="radio" name="gender" class="inputs-radio"  required> Female
+                <br><br>
+    
+                <input type="password" placeholder="Enter your password" required id="password"> <br><br>
+                <div class="btn">      
+                    <button id="buton">Sign in</button>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <script src="sign.js"></script>
+    </form>
+    <script>
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const date = document.getElementById('date').value;
+            const gender = document.querySelector('input[name="gender"]:checked');
+            const password = document.getElementById('password').value;
+    
+            if (name == "") {
+                alert("Please enter your name.");
+                return false;
+            }
+    
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email.");
+                return false;
+            }
+    
+            if (date == "") {
+                alert("Please select your birth date.");
+                return false;
+            }
+    
+            if (!gender) {
+                alert("Please select your gender.");
+                return false;
+            }
+    
+            if (password == "") {
+                alert("Please enter your password.");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </body>
 </html>

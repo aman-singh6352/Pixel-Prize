@@ -11,4 +11,3 @@ icon.addEventListener("click", function() {
         click = false;
     }
 })
-
